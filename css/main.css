@@ -1,28 +1,44 @@
 body {
   font-size: 18px;
   line-height: 1.5;
+  font-family: "Times New Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header,
-nav,
 main,
 footer {
-  margin: 1.25rem auto;
+  margin: 1.25px auto;
   max-width: 760px;
+  border: 5px black;
+  border-radius: 15px;
+}
+
+#headerimage {
+  float: right;
+  top: 5px;
+  margin: 10px;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 15px;
 }
 
 header,
 footer {
-  background-color: pink;
+  background-color: navy;
   color: #fff;
   text-align: center;
 }
 header {
-  padding: 1.5rem;
+  padding: 3px;
 }
 
-p img {
-  float: right;
-  margin: 10px;
-  border: 1px solid #000;
+footer {
+  padding: 10px;
+}
+
+hr {
+  color: black;
+}
+
+footer a:visited {
+  color: yellow;
 }
