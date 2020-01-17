@@ -1,7 +1,8 @@
 body {
   font-size: 18px;
   line-height: 1.5;
-  font-family: "Times New Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /*font-family: "Times New Roman", Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+  font-family: "IBM Plex Serif", serif;
 }
 
 header,
@@ -23,7 +24,7 @@ footer {
 
 header,
 footer {
-  background-color: navy;
+  background-color: mediumaquamarine;
   color: #fff;
   text-align: center;
 }

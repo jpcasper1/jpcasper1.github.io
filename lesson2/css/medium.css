@@ -1,0 +1,30 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 32.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+		section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
