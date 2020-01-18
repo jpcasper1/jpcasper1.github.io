@@ -1,2 +1,3 @@
-var lastModified = document.lastModified;
-document.getElementById("lastModified").textContent = lastModified;
+const options = {weekday: "long",day: "numeric", month: "long", year: "numeric"};
+document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+document.getElementById("year").innerHTML = new Date().getFullYear();

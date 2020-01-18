@@ -8,9 +8,10 @@
       name="description"
       content="An assignment portal for Joann Casper for CIT 230: Web Frontend Development - BYUI"
     />
-        <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|IBM+Plex+Serif|Roboto+Slab|Satisfy|Zilla+Slab&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
     
   </head>
 
@@ -35,12 +36,13 @@
     </main>
     <footer>
       <div>
-        &copy; 2020 | Joann Casper | New Hampshire |
+        &copy; <span id="year"></span> | Joann Casper | New Hampshire |
         <a href="https://www.byui.edu/online">BYUI Online Learning</a><br />
         Last Updated:
-        <span id="lastModified"></span>
+        <span id="currentdate"></span>
       </div>
     </footer>
-    <script src="js/currentdate.js"></script>
+    <script src="js/currentdate.js">
+    </script>
   </body>
 </html>
