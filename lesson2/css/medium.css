@@ -12,7 +12,7 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 }
-/*Tablet views *******************************/
+/*This is the part that does the medium view*/
 @media only screen and (min-width: 37.5em) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
@@ -34,7 +34,7 @@ main section picture img{
     border: 1px solid #bbb;
 }}
 
-/*Desktop views**************/
+/*This is the part that does the large view*/
 @media only screen and (min-width: 50em) {
     main{
         grid-template-columns: 1fr 1fr 1fr;
