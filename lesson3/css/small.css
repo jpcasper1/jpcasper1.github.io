@@ -111,9 +111,10 @@ footer{
 	background-color:#002447;
 	color: #fff;
 	text-align: center;
-	padding:10px;
+    padding:10px;
+    color: #ff9494
 }
 
 footer a:visited{
-    color:white
+    color:#ff9494;
 }
