@@ -19,3 +19,7 @@
         .colors{
                         width: 500px;
         }
+        
+        footer a:visited{
+            color:#ff9494;
+        }
