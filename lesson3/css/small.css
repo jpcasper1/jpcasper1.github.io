@@ -1,0 +1,119 @@
+/*@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round|Francois+One&display=swap');*/
+
+header{
+    background-color: #002447;
+}
+
+main,
+footer {
+    max-width: 960px;
+    margin: auto;
+    font-size: 16pt;
+    padding:.5em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.headerExamples{
+    padding:0px;
+}
+
+.logo {
+    top:45px;
+    width: 100px;
+    position: absolute;
+}
+main {
+    background-color: #fbeceb;
+}
+
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: 'Crete Round', serif;
+}
+
+h1, h2, h3, nav {
+    font-family: 'Bree Serif', serif;
+    color: #ff6b6b;
+}
+
+h1  {
+    text-align: center;
+    margin: 0;
+    font-size: 30pt;
+    }
+
+nav ul {
+    background-color: #002447;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+        }
+
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 16pt;
+    font-family: 'Bree, Serif'; color: #ff6b6b;
+    }
+
+nav a:hover {
+    background-color: #53d3d1;
+    color: black;
+}
+.logo1{
+    width: 200px;
+}
+.peoplePics{
+    width: 75px;
+}
+
+.peopleInfo li{
+    padding:4px;
+}
+
+
+.colors{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+}
+
+.fontTable,.fontTable td,.fontTable th {
+    border: 1px solid black;
+    border-collapse:collapse
+  }
+.fontTable tr > *{
+    padding:.25em;
+}
+
+.header-example{
+    text-align: center;
+    margin: 0;
+    font-size: 30pt;
+}
+
+
+footer{
+	background-color:#002447;
+	color: #fff;
+	text-align: center;
+	padding:10px;
+}
+
+footer a:visited{
+    color:white
+}

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+    body, main, footer {
+      margin: 1.25px auto;
+      max-width: 760px;
+      border: 5px black;
+    }
+    h1{
+        padding:1em;
+    }
+    .logo {
+        width:140px;
+        top:0px;
+      }
+     /* @media only screen and (min-width: 37.5em) {
+        /* Horizontal Menu Examples */
+        /* Flex *********************/
+    nav ul { display: flex; }
+        nav ul li { flex: 1 1 100%; }
+        .colors{
+                        width: 500px;
+        }
