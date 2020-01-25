@@ -11,15 +11,10 @@
         width:140px;
         top:0px;
       }
-     /* @media only screen and (min-width: 37.5em) {
-        /* Horizontal Menu Examples */
-        /* Flex *********************/
+   
+    .peoplePics{
+        width: 110px;
+    }
     nav ul { display: flex; }
         nav ul li { flex: 1 1 100%; }
-        .colors{
-                        width: 500px;
-        }
-        
-        footer a:visited{
-            color:#ff9494;
-        }
+        .colors{width: 500px;}
