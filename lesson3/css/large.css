@@ -1,26 +1,25 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 961px) {
-	nav a {
-		font-size: 5rem;
-	}
-	/*main {
+  nav a {
+    font-size: 5rem;
+  }
+  /*main {
 		grid-template-columns: 1fr 1fr 1fr;
 	}*/
-	article:nth-child(3) {
-		grid-column: span 1;
-    }
-    .logo1 {
-        text-align: left;
-        width: 300px;
-        
-    }
-    .peoplePics{
-        width:130px;
-    }
-    .colors{
-        display: block;
-        text-align: center;
-        width: 800;
-        border: black;
-    }
+  article:nth-child(3) {
+    grid-column: span 1;
+  }
+  .logo1 {
+    text-align: left;
+    width: 300px;
+  }
+  .peoplePics {
+    width: 130px;
+  }
+  .colors {
+    display: block;
+    text-align: center;
+    width: 800;
+    border: black;
+  }
 }
