@@ -99,16 +99,6 @@ nav a:hover {
   margin: auto;
 }
 
-.fontTable,
-.fontTable td,
-.fontTable th {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-.fontTable tr > * {
-  padding: 0.25em;
-}
-
 .header-example {
   text-align: center;
   margin: 0;
