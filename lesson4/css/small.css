@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round|Francois+One|Lato&display=swap");
+
+header {
+  display:flex;
+  justify-content: space-between;
+    font-family: "Bree Serif", serif;
+    background-color: #002447;
+    font-family: "Bree Serif", serif;
+    color: white;
+  }
+
+.onehundredW{
+  width:100px;
+}
+  
+
+.header_motto{
+    text-align: center;
+    display:block;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+  }
+  
+.nav_div{
+  background-color:#002447;
+}
+
+.logo {
+    width: 100px;
+    height:100px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 30pt;
+  }
+
+  main {
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 14pt;
+    padding: 2em;
+    background-color: #f7f7f7;
+  }
+  main p {
+    padding: .5em;
+}
+
+h2,
+h3,
+nav {
+  font-family: "Bree Serif", serif;
+  color: #002447;
+}
+
+footer {
+  margin: auto;
+  font-size: 16pt;
+  padding: 0.5em;
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	background-color: #002447;
+}
+.navigation {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+nav ul {
+    background-color: #002447;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.navigation a {
+	display: block;
+	font-size: 16pt;
+  font-family: "Bree, Serif";
+  color: #ffa500;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* nav a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    font-size: 16pt;
+    font-family: "Bree, Serif";
+    color: #ffa500;
+  } */
+
+.navigation a:hover {
+	background-color: #53d3d1;
+    color: #19180a;
+	
+}
+/*no idea if this works or not because it won't stay*/
+nav ul li.active a {
+    background-color: #19180a;
+    color: #ffa500
+}
+
+footer {
+    background-color: #002447;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+	display: block;
+}
