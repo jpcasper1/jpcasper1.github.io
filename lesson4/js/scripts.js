@@ -1,4 +1,4 @@
-const hambutton = document.getElementsByClassName('ham')[0];
+const hambutton = document.getElementsByClassName('hammenu')[0];
 
 hambutton.addEventListener("click", toggleMenu, false);
 
