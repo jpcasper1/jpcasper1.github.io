@@ -1,4 +1,10 @@
 @media only screen and (min-width: 961px) {
+.title{
+	font-size: 36pt;
+}
+.header_motto{
+	font-size: 20pt
+}
 	.navigation {
 		display: flex;
 	}
