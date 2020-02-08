@@ -1,20 +1,26 @@
 @media only screen and (min-width: 961px) {
-.title{
-	font-size: 36pt;
-}
-.header_motto{
-	font-size: 20pt
-}
+	.title {
+		font-size: 36pt;
+	}
+
+	.header_motto {
+		font-size: 20pt;
+	}
+
 	.navigation {
 		display: flex;
+		max-width: 960px;
 	}
+
 	.navigation li:first-child {
 		display: none;
 	}
+
 	.navigation li {
 		display: block;
 		flex: 1 1 100%;
 	}
+
 	.navigation li a {
 		color: #ffa500;
 	}
