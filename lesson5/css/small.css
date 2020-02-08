@@ -1,12 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round|Francois+One|Lato&display=swap");
 
-*{
+* {
   box-sizing: border-box;
-} 
+}
 
-body{
+#announce {
+  margin: 0;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  padding: 5px;
+  color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2e4b68+0,2e4b68+32,002447+74,002447+74,002447+100 */
+  background: #2e4b68;
+  /* Old browsers */
+  background: -moz-linear-gradient(top,
+      #2e4b68 0%,
+      #2e4b68 32%,
+      #002447 74%,
+      #002447 74%,
+      #002447 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,
+      #2e4b68 0%,
+      #2e4b68 32%,
+      #002447 74%,
+      #002447 74%,
+      #002447 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,
+      #2e4b68 0%,
+      #2e4b68 32%,
+      #002447 74%,
+      #002447 74%,
+      #002447 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4b68', endColorstr='#002447', GradientType=0);
+  /* IE6-9 */
+}
+
+body {
   background-color: #f7f7f7;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,15 +50,12 @@ header {
   background-color: #002447;
   font-family: "Bree Serif", serif;
   color: white;
+  padding-bottom: 5px;
 }
 
-header div{
+header div {
   padding-right: 40px;
 }
-/* 
-.onehundredW {
-  width: 100px;
-} */
 
 .townintro {
   margin: 0 auto;
@@ -37,11 +70,11 @@ header div{
   left: 30px;
   background: radial-gradient(rgb(248, 235, 117), #ffa500);
   border: 1px solid #000;
-  padding: .1rem;
+  padding: 0.1rem;
   box-shadow: 0 0 30px rgb(33, 33, 37);
-  opacity: .8;
+  opacity: 0.8;
   font-size: 12pt;
-  line-height: .5;
+  line-height: 0.5;
   color: black;
 }
 
@@ -65,7 +98,8 @@ h1 {
 
 main {
   margin: 0 auto;
-    display: block;
+  max-width: 960px;
+  display: block;
   font-family: "Lato", sans-serif;
   font-size: 14pt;
   padding: 1em;
@@ -73,10 +107,12 @@ main {
   width: 100%;
 }
 
-.center{
+.center {
   text-align: center;
 }
-h2, h3 {
+
+h2,
+h3 {
   font-family: "Bree Serif", serif;
   color: #002447;
 }
@@ -87,8 +123,9 @@ footer {
   padding: 0.5em;
   width: 100%;
 }
-nav{
-  background-color: #173757
+
+nav {
+  background-color: #173757;
 }
 
 .navigation {
@@ -108,13 +145,6 @@ nav{
   display: none;
 }
 
-/* nav ul {
-  text-align: center;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-} */
-
 .navigation a {
   display: block;
   font-size: 16pt;
@@ -128,23 +158,42 @@ nav{
 .navigation a:hover {
   background-color: #53d3d1;
   color: #19180a;
-
 }
 
 nav ul li.active a {
   background-color: #2e4b68;
-  color: #ffa500
+  color: #ffa500;
 }
+
+.townImage{
+  overflow: hidden;
+  width:100%;
+  height:300px;
+  object-fit: cover;
+}
+
+.mapImage{
+  overflow: hidden;
+  width:100%;
+  object-fit: cover;
+}
+
+
+.contactTitle{
+  width:100%;
+  text-align:center;
+}
+
 /*start flex css here*/
-.flex-container{
+.flex-container {
   margin: 0 auto;
   max-width: 850px;
   display: flex;
   flex-direction: row;
   font-family: "Lato", sans-serif;
-  }
+}
 
-.col{
+.col {
   flex: 1 1 100%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -154,55 +203,71 @@ nav ul li.active a {
   font-weight: 600;
   font-size: 18px;
 }
-.flex div img{
-	border-radius: 100px;
-	padding: 5px;
+
+.flex div img {
+  border-radius: 100px;
+  padding: 5px;
 }
 
 .flex-container div:last-child {
   border-right: 1px solid black;
 }
 
-.dow{
+.dow {
   display: block;
   padding: 5px;
   background-color: #173757;
   color: #ffa500;
- }
+}
 
-.data{
+.data {
   border-top: 1px solid black;
   display: block;
   padding: 0 5px 5px;
 }
-.art{
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
-   
+
+.art {
+  margin: 0 auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 15px;
 }
+
 /*end css flex here*/
 
-.artimage{
+.artimage {
   display: block;
   margin: 0 auto;
   border: 1px solid #000;
   box-shadow: 0 0 20px rgb(33, 33, 37);
- }
+}
 
- /*start contact flex here*/
-.flex-contact{
+/*start contact flex here*/
+.flex-contact {
   margin: 0 auto;
+  max-width: 960px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   font-family: "Lato", sans-serif;
-  }
- 
-  .contact{
-    flex: 1 1 100%;
-    text-align: left;
-          }
+}
+
+.smallDiss{
+  display:none;
+}
+
+.contact {
+  text-align: left;
+  padding-left: 7px;
+}
+
+.contact img{
+  display: none;
+}
+
 /*end contact flex here*/
-  
+
 footer {
   background-color: #002447;
   text-align: center;
@@ -212,4 +277,11 @@ footer {
 
 .responsive li {
   display: block;
+}
+
+/* Media Query for medium + screens */
+@media only screen and (max-width: 32.5em) {
+  .postTitle{
+    text-align:center;
+  }
 }

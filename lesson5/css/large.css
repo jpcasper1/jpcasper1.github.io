@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round|Francois+One|Lato&display=swap");
 @media only screen and (min-width: 961px) {
 	.title {
 		font-size: 36pt;
@@ -20,8 +21,5 @@
 		display: block;
 		flex: 1 1 100%;
 	}
-
-	.navigation li a {
-		color: #ffa500;
-	}
+	
 }

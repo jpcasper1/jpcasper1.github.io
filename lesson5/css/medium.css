@@ -25,12 +25,21 @@
 		display: block;
 		flex: 1 1 100%;
 	}
+	
+	.contact {
+		flex: 1 1 100%;
+	  }
 
-	.navigation li a {
-		color: #ffa500;
-	}
-	.artimage{
+	.contact img{
+		display: flex;
+	  }
+
+	  	.artimage{
 		padding: .15px;
 		float: right;
 	}
+
+	.smallDiss{
+		display:initial;
+	  }
 }
