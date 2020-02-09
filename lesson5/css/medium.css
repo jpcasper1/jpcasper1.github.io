@@ -39,6 +39,11 @@
 		float: right;
 	}
 
+	.mapImage{
+		overflow: hidden;
+		width:100%;
+		object-fit: cover;
+	  }
 	.smallDiss{
 		display:initial;
 	  }
