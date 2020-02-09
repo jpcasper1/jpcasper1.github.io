@@ -178,7 +178,6 @@ nav ul li.active a {
   object-fit: cover;
 }
 
-
 .contactTitle{
   width:100%;
   text-align:center;
@@ -242,6 +241,7 @@ nav ul li.active a {
   box-shadow: 0 0 20px rgb(33, 33, 37);
 }
 
+
 /*start contact flex here*/
 .flex-contact {
   margin: 0 auto;
@@ -260,10 +260,15 @@ nav ul li.active a {
 .contact {
   text-align: left;
   padding-left: 7px;
+  padding-top: 0;
 }
 
 .contact img{
   display: none;
+}
+
+.column{
+  float: left;
 }
 
 /*end contact flex here*/
