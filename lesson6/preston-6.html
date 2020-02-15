@@ -43,17 +43,22 @@
       <section class="townintro">
         <h2 class="center">Preston Idaho</h2>
         <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
-        <picture class="townImage2">
+        <picture class="townImageParent">
+          <source media="(max-width: 300px)" srcset="images/citimage300.jpg">
+            <source media="(max-width: 500px)" srcset="images/citimage500.jpg">
+              <img class='townImageImage' src="images/citimage960.jpg" alt="image">
+        </picture>
+        <!-- <picture class="townImage2">
           <img src="images/citimage960.jpg" alt="Mountains" sizes=100vw
-          srcset="images/citimage300.jpg 300w, images/citimage500.jpg 500w, images/citimage960.jpg 960w">
+          srcset="images/citimage300.jpg 300w, images/citimage500.jpg 500w, images/citimage960.jpg 960w"> -->
         </picture>
         <div class="wupdate">
           <h2>Current Weather</h2>
           <p>Today: Sunny</p>
-          <p>Temperature: 29 degrees</p>
-          <p>Windchill: &#176;F</p>
+          <p>Temperature: <span id='temperature'>29</span> degrees</p>
+          <p>Windchill: <span id='windChill'></span></p>
           <p>Humidity: 89%</p>
-          <p>Wind Speed: 5 mph</p>
+          <p>Wind Speed: <span id='windSpeed'>5</span> mph</p>
           <p></p>
         </div>
       </section>
@@ -167,5 +172,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
