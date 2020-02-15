@@ -37,6 +37,7 @@
 	  	.artimage{
 		padding: .15px;
 		float: right;
+		max-width: 300px;
 	}
 
 	.mapImage{
