@@ -1,1 +1,1 @@
-WebFont.load({google: {families: ["Bree", "Lato"]}});
+WebFont.load({google: {families: ["Bree Serif", "Lato"]}});
