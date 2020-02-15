@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <meta
       name="description"
-      content="A website portal for Joann Casper for CIT 230: Web Frontend Development - BYUI"
+      content="A weather website for Southern Idaho."
     />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="css/small.css" />
@@ -28,23 +28,25 @@
         <span class="header_motto">Idaho's Premiere Weather</span>
       </div>
     </header>
-    <div class="nav_div">
-      <nav>
+         <nav>
         <ul class="navigation">
           <li class="hammenu"><a>&#9776; Menu</a></li>
           <li><a href="/index.html">Home</a></li>
-          <li class="active"><a href="/lesson5/preston-6.html">Preston</a></li>
+          <li class="active"><a href="/lesson6/preston-6.html">Preston</a></li>
           <li><a href="#">Soda Springs</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li><a href="#">Storm Center</a></li>
           <li><a href="#">Gallery</a></li>
         </ul>
       </nav>
-    </div>
-    <main>
+        <main>
       <section class="townintro">
         <h2 class="center">Preston Idaho</h2>
-        <img class="townImage" src="images/preston1.jpg" alt="Preston Town" />
+        <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
+        <picture class="townImage2">
+          <img src="images/citimage960.jpg" alt="Mountains" sizes=100vw
+          srcset="images/citimage300.jpg 300w, images/citimage500.jpg 500w, images/citimage960.jpg 960w">
+        </picture>
         <div class="wupdate">
           <h2>Current Weather</h2>
           <p>Today: Sunny</p>
@@ -85,7 +87,7 @@
         </div>
       </section>
 
-      <h2 class="postTitle">The Frost Festival</h2>
+      <h2 class="center">The Frost Festival</h2>
       <p>By the Snowman</p>
       <section class="art">
         <img class="artimage" alt="Kids in snow" src="images/frostfest.jpg" />
