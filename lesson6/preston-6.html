@@ -1,177 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>The 208 Forecast</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <meta
-      name="description"
-      content="A weather website for Southern Idaho."
-    />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  </head>
 
-  <body>
-    <p id="announce">
-      Saturday=Preston Pancakes in the Park!<br />
-      9:00 a.m. Saturday at the city park pavilion.
-    </p>
-    <header>
-      <img src="images/idicon_png.png" class="logo" alt="Site logo" />
-      <div>
-        <h1 class="title">The 208 Forecast</h1>
-        <span class="header_motto">Idaho's Premiere Weather</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>The 208 Forecast</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="description" content="A weather website for Southern Idaho." />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
+
+<body>
+  <p id="announce">
+    Saturday=Preston Pancakes in the Park!<br />
+    9:00 a.m. Saturday at the city park pavilion.
+  </p>
+  <header>
+    <img src="images/idicon_png.png" class="logo" alt="Site logo" />
+    <div>
+      <h1 class="title">The 208 Forecast</h1>
+      <span class="header_motto">Idaho's Premiere Weather</span>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li class="hammenu"><a>&#9776; Menu</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li class="active"><a href="/lesson6/preston-6.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="townintro">
+      <h2 class="center">Preston Idaho</h2>
+      <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
+      <picture class="townImageParent">
+        <source media="(max-width: 500px)" srcset="images/citimg500.jpg">
+        <source media="(max-width: 700px)" srcset="images/citimg700.jpg">
+        <img class='townImageImage' src="images/citimage960.jpg" alt="image">
+      </picture>
+      <div class="wupdate">
+        <h2>Current Weather</h2>
+        <p>Today: Sunny</p>
+        <p>Temperature: <span id='temperature'>29</span> degrees</p>
+        <p>Windchill: <span id='windChill'></span></p>
+        <p>Humidity: 89%</p>
+        <p>Wind Speed: <span id='windSpeed'>5</span> mph</p>
+        <p></p>
       </div>
-    </header>
-         <nav>
-        <ul class="navigation">
-          <li class="hammenu"><a>&#9776; Menu</a></li>
-          <li><a href="/index.html">Home</a></li>
-          <li class="active"><a href="/lesson6/preston-6.html">Preston</a></li>
-          <li><a href="#">Soda Springs</a></li>
-          <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </nav>
-        <main>
-      <section class="townintro">
-        <h2 class="center">Preston Idaho</h2>
-        <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
-        <picture class="townImageParent">
-          <source media="(max-width: 300px)" srcset="images/citimage300.jpg">
-            <source media="(max-width: 500px)" srcset="images/citimage500.jpg">
-              <img class='townImageImage' src="images/citimage960.jpg" alt="image">
-        </picture>
-        <!-- <picture class="townImage2">
-          <img src="images/citimage960.jpg" alt="Mountains" sizes=100vw
-          srcset="images/citimage300.jpg 300w, images/citimage500.jpg 500w, images/citimage960.jpg 960w"> -->
-        </picture>
-        <div class="wupdate">
-          <h2>Current Weather</h2>
-          <p>Today: Sunny</p>
-          <p>Temperature: <span id='temperature'>29</span> degrees</p>
-          <p>Windchill: <span id='windChill'></span></p>
-          <p>Humidity: 89%</p>
-          <p>Wind Speed: <span id='windSpeed'>5</span> mph</p>
-          <p></p>
+    </section>
+    <section class="smallDiss">
+      <h2 class="center">5 Day Forecast</h2>
+      <div class="flex-container">
+        <div class="col">
+          <span class="dow">Friday</span>
+          <img src="images/snow2.png" alt="snow" />
+          <span class="data">Temp</span>
         </div>
-      </section>
-      <section class="smallDiss">
-        <h2 class="center">5 Day Forecast</h2>
-        <div class="flex-container">
-          <div class="col">
-            <span class="dow">Friday</span>
-            <img src="images/snow2.png" alt="snow" />
-            <span class="data">Temp</span>
-          </div>
-          <div class="col">
-            <span class="dow">Saturday</span>
-            <img src="images/snow2.png" alt="snow" />
-            <span class="data">Temp</span>
-          </div>
-          <div class="col">
-            <span class="dow">Sunday</span>
-            <img src="images/snow2.png" alt="snow" />
-            <span class="data">Temp</span>
-          </div>
-          <div class="col">
-            <span class="dow">Monday</span>
-            <img src="images/snow2.png" alt="snow" />
-            <span class="data">Temp</span>
-          </div>
-          <div class="col">
-            <span class="dow">Tuesday</span>
-            <img src="images/snow2.png" alt="snow" />
-            <span class="data">Temp</span>
-          </div>
+        <div class="col">
+          <span class="dow">Saturday</span>
+          <img src="images/snow2.png" alt="snow" />
+          <span class="data">Temp</span>
         </div>
-      </section>
+        <div class="col">
+          <span class="dow">Sunday</span>
+          <img src="images/snow2.png" alt="snow" />
+          <span class="data">Temp</span>
+        </div>
+        <div class="col">
+          <span class="dow">Monday</span>
+          <img src="images/snow2.png" alt="snow" />
+          <span class="data">Temp</span>
+        </div>
+        <div class="col">
+          <span class="dow">Tuesday</span>
+          <img src="images/snow2.png" alt="snow" />
+          <span class="data">Temp</span>
+        </div>
+      </div>
+    </section>
 
-      <h2 class="center">The Frost Festival</h2>
-      <p>By the Snowman</p>
-      <section class="art">
-        <img class="artimage" alt="Kids in snow" src="images/frostfest.jpg" />
-        <p>
-          The 2020 Frost Festival is set with activities for all ages of
-          Prestonites this weekend. The annual winter event has been held for
-          more than 20 years and originally was held over the course of an
-          entire weekend. Organizers are streamlining the schedule this year,
-          making it a one-day event and hoping to put Preston City Park in the
-          spotlight as a town recreational area that offers a lot of
-          opportunities for seasonal fun, including a popular sledding hill and
-          lodge.
-        </p>
-        <p>
-          This year's Frost Festival includes, if ample snow, sledding, fat
-          bikes, and snowshoeing on the parks hills and fields.
-        </p>
-        <p>
-          If snow is a bit scarce, there will still be a long list of fun
-          activities for families to enjoy including ice sculptures, food
-          trucks, a bonfire hosted by members of the Preston Fire Department, a
-          puppet show provided by Preston Public Library, visits with princesses
-          from the Disney movie "Frozen," and visits with Frosty the snowman.
-        </p>
-        <p>
-          There will also be fun Harry Potter-themed activities available, and a
-          Frost Festival King and Queen will be crowned. Clowns will be on hand
-          to show off some fun balloon art and families can also enjoy a petting
-          zoo.
-        </p>
-      </section>
-      <section>
-        <h3 class="contactTitle">Contact Information</h3>
-        <div class="flex-contact">
-          <div class="contact">
-            <img
-              class="smallDiss"
-              src="images/prestonmap.jpg"
-              alt="Preston overhead"
-            />
-          </div>
-          <div class="contact">
-            <p>
-              <img src="images/loc_sm.png" alt="geolocation icon" /> The 208
-              Forecast<br />
-              1900 Weather Ave. #33<br />
-              Preston, ID 55442
-            </p>
-          </div>
-          <div class="contact">
-            <p>&#9742; 999-999-9999</p>
-            <p>&#9993; email@208Forecast.com</p>
-            <div class="column">
-              <img src="images/fb.png" alt="facebook icon" />
-            </div>
-            <div class="column">
-              <img src="images/tweet.png" alt="twitter icon" />
-            </div>
-            <div class="column">
-              <img src="images/pin.png" alt="pinterest icon" />
-            </div>
-            <div class="column">
-              <img src="images/yelp.png" alt="yelp icon" />
-            </div>
-            <!-- https://www.iconfinder.com/rasmusnielsendk  free icons if attributed -->
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
+    <h2 class="center">The Frost Festival</h2>
+    <p>By the Snowman</p>
+    <section class="art">
+      <img class="artimage" alt="Kids in snow" src="images/frostfest.jpg" />
       <p>
-        &copy;<span id="year"></span> The 208 Forecast : Attributions : Joann
-        Casper : <span id="currentdate"></span>
+        The 2020 Frost Festival is set with activities for all ages of
+        Prestonites this weekend. The annual winter event has been held for
+        more than 20 years and originally was held over the course of an
+        entire weekend. Organizers are streamlining the schedule this year,
+        making it a one-day event and hoping to put Preston City Park in the
+        spotlight as a town recreational area that offers a lot of
+        opportunities for seasonal fun, including a popular sledding hill and
+        lodge.
       </p>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="js/webfontload.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/windchill.js"></script>
-  </body>
+      <p>
+        This year's Frost Festival includes, if ample snow, sledding, fat
+        bikes, and snowshoeing on the parks hills and fields.
+      </p>
+      <p>
+        If snow is a bit scarce, there will still be a long list of fun
+        activities for families to enjoy including ice sculptures, food
+        trucks, a bonfire hosted by members of the Preston Fire Department, a
+        puppet show provided by Preston Public Library, visits with princesses
+        from the Disney movie "Frozen," and visits with Frosty the snowman.
+      </p>
+      <p>
+        There will also be fun Harry Potter-themed activities available, and a
+        Frost Festival King and Queen will be crowned. Clowns will be on hand
+        to show off some fun balloon art and families can also enjoy a petting
+        zoo.
+      </p>
+    </section>
+    <section>
+      <h3 class="contactTitle">Contact Information</h3>
+      <div class="flex-contact">
+        <div class="contact">
+          <img class="smallDiss" src="images/prestonmap.jpg" alt="Preston overhead" />
+        </div>
+        <div class="contact">
+          <p>
+            <img src="images/loc_sm.png" alt="geolocation icon" /> The 208
+            Forecast<br />
+            1900 Weather Ave. #33<br />
+            Preston, ID 55442
+          </p>
+        </div>
+        <div class="contact">
+          <p>&#9742; 999-999-9999</p>
+          <p>&#9993; email@208Forecast.com</p>
+          <div class="column">
+            <img src="images/fb.png" alt="facebook icon" />
+          </div>
+          <div class="column">
+            <img src="images/tweet.png" alt="twitter icon" />
+          </div>
+          <div class="column">
+            <img src="images/pin.png" alt="pinterest icon" />
+          </div>
+          <div class="column">
+            <img src="images/yelp.png" alt="yelp icon" />
+          </div>
+          <!-- https://www.iconfinder.com/rasmusnielsendk  free icons if attributed -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="year"></span> The 208 Forecast : Attributions : Joann
+      Casper : <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/windchill.js"></script>
+</body>
+
 </html>
