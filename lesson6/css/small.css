@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
+/*banner at the top for Friday*/
 #announce {
   margin: 0;
   text-align: left;
@@ -36,6 +36,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e4b68', endColorstr='#002447', GradientType=0);
   /* IE6-9 */
 }
+/*End banner css*/
 
 body {
   background-color: #f7f7f7;

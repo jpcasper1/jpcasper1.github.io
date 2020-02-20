@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em) {
+	header {
+		justify-content: center;
+	}
+
+	.header_motto {
+		font-size: 16pt
+    }
+    
+    .navigation {
+		display: flex;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+    }
+}
