@@ -3,7 +3,6 @@
 * {
   font-family: "Ubuntu";
 max-width: 325px;
-display: center;
 }
 
 table {
@@ -11,9 +10,9 @@ table {
   border-collapse: collapse;
   text-align: center;
   padding: 2px;
-  box-shadow: 0  0 10px  #7fb9c2;
- 
-}
+  box-shadow:  0 0 20px  #7fb9c2;
+  background-color: #e7f0ed;
+ }
 
 table thead tr td{
   text-align: center;
@@ -24,22 +23,24 @@ th {
   font-weight: bold;
   color: white;
   background-color: #628ca6;
-  border: 1px solid white;
+  border: 1px solid lightgray;
   padding: 5px;
 }
 tr td{
-    border: 1px solid white;
+    border: 1px solid lightgray;
     padding: 5px;
+    
 }
-tr:nth-child(even) {
+/* tr:nth-child(even) {
   background-color: #e7f0ed;
-}
+} */
 tr:nth-child(odd) {
-  background-color: #e7ffed;
-}
+  background-color: #e7ffed; } 
+
 tfoot tr td {
-  background-color: #628ca6;
+  background-color: #7fb9c2;
 }
-.bf {
-  font-style: italic;
+.sg {
+  color: white;
+  background-color: #628ca6;
 }
