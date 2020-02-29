@@ -38,87 +38,85 @@
     </ul>
   </nav>
   <main>
-    <h2 class="center">Preston Idaho</h2>
-    <section class="townintro">
-    <img class="townImage" src="images/prestonimg.jpg" alt="Preston Town" />
-        <picture class="townImageParent">
-        <source media="(max-width: 500px)" srcset="images/prestonimg500.jpg">
-        <source media="(max-width: 700px)" srcset="images/prestonimg700.jpg">
-        <!-- <img class='townImageImage' src="images/citimage960.jpg" alt="PrestonTowns"> -->
-      </picture>
-      <div class="wupdate">
-        <h2>Current Weather</h2>
-        <p>Today: Sunny</p>
-        <p>Temperature: <span id='temperature'>29</span> degrees</p>
-        <p>Windchill: <span id='windChill'></span></p>
-        <p>Humidity: 89%</p>
-        <p>Wind Speed: <span id='windSpeed'>5</span> mph</p>
-        <p></p>
-      </div>
-    </section>
-    <section class="smallDiss">
-      <h2 class="center">5 Day Forecast</h2>
-      <div class="flex-container">
-        <div class="col">
-          <span class="dow">Friday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Saturday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Sunday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Monday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Tuesday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-      </div>
-    </section>
+    <h2>Storm Center - Report a Storm</h2>
+    <form method="get" action='thanks.html'>
+      <fieldset>
+        <legend>Your information
+        </legend>
+        <label class="inputTitle">Full Name*<input type="text" name="fname" id="fullName" minlength="5"
+            pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="inputTitle">Phone*<input type="tel" name="phone" placeholder="###-###-####" required></label>
+        <label class="inputTitle">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+        <label class="inputTitle">Zip code*<input type="number" name="zipcode" min="10000" max="99999"
+            onkeyup="if(this.value.length>1){this.value=Math.abs(this.value)}" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>
+          Storm Information
+        </legend>
+        <label class="inputTitle">Date<input type="date" name="date"></label>
+        <label for="storms" class="inputTitle">Storm type:
+          <input name="storms" list="stormlist"></label>
+        <datalist id="stormlist">
+          <option value="Flash Flood">
+          <option value="Hail">
+          <option value="Hurricane">
+          <option value="Thunderstorm">
+          <option value="Tornado">
+        </datalist>
 
-    <h2 class="center">The Frost Festival</h2>
-    <p>By the Snowman</p>
-    <section class="art">
-      <img class="artimage" alt="Kids in snow" src="images/frostfest.jpg" />
-      <p>
-        The 2020 Frost Festival is set with activities for all ages of
-        Prestonites this weekend. The annual winter event has been held for
-        more than 20 years and originally was held over the course of an
-        entire weekend. Organizers are streamlining the schedule this year,
-        making it a one-day event and hoping to put Preston City Park in the
-        spotlight as a town recreational area that offers a lot of
-        opportunities for seasonal fun, including a popular sledding hill and
-        lodge.
-      </p>
-      <p>
-        This year's Frost Festival includes, if ample snow, sledding, fat
-        bikes, and snowshoeing on the parks hills and fields.
-      </p>
-      <p>
-        If snow is a bit scarce, there will still be a long list of fun
-        activities for families to enjoy including ice sculptures, food
-        trucks, a bonfire hosted by members of the Preston Fire Department, a
-        puppet show provided by Preston Public Library, visits with princesses
-        from the Disney movie "Frozen," and visits with Frosty the snowman.
-      </p>
-      <p>
-        There will also be fun Harry Potter-themed activities available, and a
-        Frost Festival King and Queen will be crowned. Clowns will be on hand
-        to show off some fun balloon art and families can also enjoy a petting
-        zoo.
-      </p>
-    </section>
+        </select>
+        </label>
+        <label for="severity" class="inputTitle"><span class='severityTitle'>Severity:</span>
+          <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"
+            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
+          <span id="severityvalue">5</span>
+        </label>
+
+        <datalist id="tickmarks">
+          <option value="0">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+          <option value="4">
+          <option value="5">
+          <option value="6">
+          <option value="7">
+          <option value="8">
+          <option value="9">
+          <option value="10">
+        </datalist>
+
+        <label for="region" class="inputTitle">Region:</label>
+        <select id="region" name="region">
+          <option value="" disabled selected>Select Region</option>
+          <option value="Preston">Preston</option>
+          <option value="Soda Springs">Soda Springs</option>
+          <option value="Fish Haven">Fish Haven</option>
+        </select>
+
+
+      </fieldset>
+      <fieldset>
+        <legend>Are you in danger?</legend>
+        <div class="selection">
+          <label for="Status1"><input type="radio" id="yes" name="status" value="Yes" checked>Yes</label></div>
+        <div class="selection">
+          <label for="status3"><input type="radio" id="maybe" name="status" value="maybe">Maybe</label></div>
+        <div class="selection">
+          <label for="Status2"><input type="radio" id="no" name="status" value="No">No</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Comments</legend>
+        <label for="comments"><textarea class="comments" for="comments" name="comments"></textarea>
+        </label>
+      </fieldset>
+      <div class="buttons">
+        <input type="submit" name="report storm" value="Report Storm!">
+      </div>
+    </form>
+   
     <section>
       <h3 class="contactTitle">Contact Information</h3>
       <div class="flex-contact">
@@ -162,7 +160,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfontload.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/windchill.js"></script>
-</body>
+  </body>
 
 </html>

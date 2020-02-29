@@ -1,0 +1,23 @@
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: "IBM Plex Serif", serif;
+  }
+
+  header, footer {
+      margin: 1.25 px auto;
+      max-width: 760px;
+      background-color: mediumvioletred;
+      color: #fff;
+      text-align: center;
+  }
+  h1 {
+      font-size: 15rem;
+      margin: 0.15rem;
+  }
+
+  h2 {font-size: 1rem;}
+
+  #headerimage {
+      float: right;
+  }

@@ -15,3 +15,13 @@ document.getElementById("currentdate").textContent = d.toLocaleString("en-DE",op
     
 	if(d.getDay() == 5) {document.getElementById("announce").style.display="block";}
 	else{document.getElementById("announce").style.display="none";}
+
+	function adjustRating(severity) {
+		document.getElementById("severityvalue").innerHTML = severity;
+	}
+
+
+document.getElementById("fullName").oninvalid = function(event){
+	event.target.setCustomValidity('This must be longer than 5 characters, with no numbers.')
+	event.target.style.borderBottom = '3px solid red';
+}
