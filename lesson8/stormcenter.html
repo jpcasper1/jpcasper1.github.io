@@ -46,17 +46,18 @@
         <label class="inputTitle">Full Name*<input type="text" name="fname" id="fullName" minlength="5"
             pattern="[\sA-Za-z]{5,}" required></label>
         <label class="inputTitle">Phone*<input type="tel" name="phone" placeholder="###-###-####" required></label>
-        <label class="inputTitle">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
         <label class="inputTitle">Zip code*<input type="number" name="zipcode" min="10000" max="99999"
-            onkeyup="if(this.value.length>1){this.value=Math.abs(this.value)}" required></label>
+          onkeyup="if(this.value.length>1){this.value=Math.abs(this.value)}" required></label>
+        <label class="inputTitle">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+        
       </fieldset>
       <fieldset>
         <legend>
           Storm Information
         </legend>
-        <label class="inputTitle">Date<input type="date" name="date"></label>
+        <label class="inputTitle">Date:<input type="date" name="date"></label>
         <label for="storms" class="inputTitle">Storm type:
-          <input name="storms" list="stormlist"></label>
+          <input name="storms" id="storms" list="stormlist"></label>
         <datalist id="stormlist">
           <option value="Flash Flood">
           <option value="Hail">
@@ -64,9 +65,6 @@
           <option value="Thunderstorm">
           <option value="Tornado">
         </datalist>
-
-        </select>
-        </label>
         <label for="severity" class="inputTitle"><span class='severityTitle'>Severity:</span>
           <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks"
             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" />
@@ -100,21 +98,23 @@
       <fieldset>
         <legend>Are you in danger?</legend>
         <div class="selection">
-          <label for="Status1"><input type="radio" id="yes" name="status" value="Yes" checked>Yes</label></div>
+          <label for="Status1"><input type="radio" id="Status1" name="status" value="Yes" checked>Yes</label></div>
         <div class="selection">
-          <label for="status3"><input type="radio" id="maybe" name="status" value="maybe">Maybe</label></div>
+          <label for="Status2"><input type="radio" id="Status2" name="status" value="Maybe">Maybe</label></div>
         <div class="selection">
-          <label for="Status2"><input type="radio" id="no" name="status" value="No">No</label>
+          <label for="Status3"><input type="radio" id="Status3" name="status" value="No">No</label>
         </div>
       </fieldset>
       <fieldset>
-        <legend>Comments</legend>
-        <label for="comments"><textarea class="comments" for="comments" name="comments"></textarea>
+        <legend>Comments:</legend>
+        <label for="comments"><textarea class="comments" id="comments" name="comments"></textarea>
         </label>
       </fieldset>
-      <div class="buttons">
-        <input type="submit" name="report storm" value="Report Storm!">
-      </div>
+      <label for="reportstorm">
+      
+        <input id="reportstorm" class="buttons" type="submit" name="reportstorm" value="Report Storm!">
+      
+      </label>
     </form>
    
     <section>

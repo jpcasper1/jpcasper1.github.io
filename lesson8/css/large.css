@@ -21,6 +21,10 @@
 		flex: 1 1 100%;
 	}
 	
+	main{
+		max-width: 960px;
+	  }
+
 	.selection{
 		padding: 6px;
 	  }

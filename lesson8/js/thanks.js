@@ -7,4 +7,4 @@ function getUrlVars() {
     return vars;
 }
 
-document.getElementById('thanks').innerHTML = '<h1> Thank you, '+getUrlVars()['fname'].replace('+',' ') + ' for submitting a report.</h1>';
+document.getElementById('thanks').innerHTML = '<h1> Thank you, '+getUrlVars()['fname'].replace('+',' ') + ', for submitting a report.</h1>';
