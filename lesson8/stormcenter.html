@@ -43,10 +43,9 @@
       <fieldset>
         <legend>Your information
         </legend>
-        <label class="inputTitle">Full Name*<input type="text" name="fname" id="fullName" minlength="5"
-            pattern="[\sA-Za-z]{5,}" required></label>
+        <label class="inputTitle">Full Name*<input type="text" name="fname" id="fullName" pattern="[\sA-Za-z]{5,}" required></label>
         <label class="inputTitle">Phone*<input type="tel" name="phone" placeholder="###-###-####" required></label>
-        <label class="inputTitle">Zip code*<input type="number" name="zipcode" min="10000" max="99999"
+        <label class="inputTitle">Zip code*<input type="number" name="zipcode" min="100000" max="99999"
             onkeyup="if(this.value.length>1){this.value=Math.abs(this.value)}" required></label>
         <label class="inputTitle">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
 
@@ -119,7 +118,7 @@
       <h3 class="contactTitle">Contact Information</h3>
       <div class="flex-contact">
         <div class="contact">
-          <img class="smallDiss" src="images/prestonmap.jpg" alt="Preston overhead" />
+          <img class="mapImage" src="images/prestonmap.jpg" alt="Preston overhead" />
         </div>
         <div class="contact">
           <p>

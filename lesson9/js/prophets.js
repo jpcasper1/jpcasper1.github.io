@@ -14,7 +14,7 @@ fetch(requestURL)
         let h2 = document.createElement('h2');
         let birth = document.createElement('p');
         let place = document.createElement('p');
-        let order=document.createElement('order')
+        let order=document.createElement('order');
         let image = document.createElement('img');
 
         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
