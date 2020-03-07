@@ -1,94 +1,69 @@
 * {
     box-sizing: border-box;
-  }
-    
-  body {
+}
+body {
     background-color: #f7f7f7;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     font-family: "Bree Serif", serif;
     background-color: #002447;
     color: white;
     padding-bottom: 5px;
-  }
-  
-  header div {
+}
+header div {
     padding-right: 40px;
-  }
-  
-  .townintro {
-    margin: 0 auto;
-    max-width: 960px;
-    position: relative;
-    padding: 0em;
-  }
-  
-  .wupdate {
-    position: absolute;
-    top: 25%;
-    left: 30px;
-    background: radial-gradient(rgb(248, 235, 117), #ffa500);
-    border: 1px solid #000;
-    padding: 0.1rem;
-    box-shadow: 0 0 30px rgb(33, 33, 37);
-    opacity: 0.8;
-    font-size: 12pt;
-    line-height: 0.5;
-    color: black;
-  }
-  
-  .header_motto {
+}
+
+.header_motto {
     text-align: center;
     display: block;
     padding: 10px;
     font-family: "Lato", sans-serif;
-  }
-  
-  .logo {
+}
+.logo {
     width: 100px;
     height: 100px;
-  }
-  
-  h1 {
+}
+
+/*class formatting*/
+.center {
+    text-align: center;
+}
+/*header formatting*/
+h1 {
     text-align: center;
     margin: 0;
+    font-family: "Bree Serif", serif;
     font-size: 30pt;
-  }
-  
-  main {
+}
+
+h2,
+h3 {
+    font-family: "Bree Serif", serif;
+    color: #002447;
+}
+
+/*Start main formatting here*/
+/* main {
     margin: 0 auto;
     max-width: 960px;
     display: block;
     font-family: "Lato", sans-serif;
     font-size: 14pt;
-    padding: 1em;
-    background-color: #f7f7f7;
+    /* padding: 1em; */
+   /* background-color: #f7f7f7;
     width: 100%;
-  }
-  
-  .cards {
-    display: grid;
-    grid-template-columns: 100%;
-}
-  .center {
-    text-align: center;
-  }
-  
-  h2,
-  h3 {
-    font-family: "Bree Serif", serif;
-    color: #002447;
-  }
-  /*start nav here*/
-  
-  nav {
+} */
+
+/*Start navigation menu formatting here*/
+nav {
     background-color: #173757;
-  }
-  
-  .navigation {
+}
+
+.navigation {
     background-color: #173757;
     margin: 0 auto;
     max-width: 960px;
@@ -96,126 +71,45 @@
     text-align: center;
     padding: 0;
     font-family: "Bree Serif", serif;
-  }
-  
-  .navigation li:first-child {
+}
+
+.navigation li:first-child {
     display: block;
-  }
-  
-  .navigation li {
+}
+
+.navigation li {
     display: none;
-  }
-  
-  .navigation a {
+}
+
+.navigation a {
     display: block;
     font-size: 16pt;
-    font-family: "Bree, Serif";
     color: #ffa500;
     padding: 0.75rem;
     text-align: center;
     text-decoration: none;
     width: 100%;
     height: 100%;
-   }
-  
-  .navigation a:hover {
+}
+
+.navigation a:hover {
     background-color: #53d3d1;
     color: #19180a;
-  }
-  
-  nav ul li.active a {
+}
+
+nav ul li.active a {
     background-color: #2e4b68;
     color: #ffa500;
-  }
-  /*end nav here*/
-  
-  /* .townImage{
-    overflow: hidden;
-    width:100%;
-    height:300px;
-    object-fit: cover;
-  } */
-  .townImageParent{
-    margin: 0 2%;
-    overflow: hidden;
-  }
-  
-  .townImageImage{
-    width:96%;
-  }
-  
-  .contactTitle{
+}
+
+/*start contact flex here*/
+
+.contactTitle{
     width:100%;
     text-align:center;
   }
-  
-  /*start flex css here*/
-  .flex-container {
-    margin: 0 auto;
-    max-width: 850px;
-    display: flex;
-    flex-direction: row;
-    font-family: "Lato", sans-serif;
-  }
-  
-  .col {
-    flex: 1 1 100%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    background-color: transparent;
-    text-align: center;
-    font-weight: 600;
-    font-size: 18px;
-  }
-  
-  .flex div img {
-    border-radius: 100px;
-    padding: 5px;
-  }
-  
-  .flex-container div:last-child {
-    border-right: 1px solid black;
-  }
-  
-  .dow {
-    display: block;
-    padding: 5px;
-    background-color: #173757;
-    color: #ffa500;
-  }
-  
-  .data {
-    border-top: 1px solid black;
-    display: block;
-    padding: 0 5px 5px;
-  }
-  
-  .art {
-    margin: 0 auto;
-    max-width: 960px;
-    padding-right: 10px;
-    padding-left: 15px;
-  }
-  
-  .smallDiss{
-    display:none;
-  }
-  
-  /*end css flex here*/
-  
-  .artimage {
-    display: block;
-    width: 90%;
-    margin: 15px;
-    border: 1px solid #000;
-    box-shadow: 0 0 20px rgb(33, 33, 37);
-    
-  }
-  
-  
-  /*start contact flex here*/
-  .flex-contact {
+
+.flex-contact {
     margin: 0 auto;
     max-width: 960px;
     padding-top: 10px;
@@ -224,8 +118,7 @@
     justify-content: space-around;
     font-family: "Lato", sans-serif;
   }
-  
-  
+   
   .column{
     float: left;
   }
@@ -238,12 +131,11 @@
   .mapImage{
     display: none;
   }
-  
-  
-  /*end contact flex here*/
-  
-  footer {
+/*end contact flex here*/
+
+footer {
     background-color: #002447;
+    font-family: "Lato", sans-serif;
     text-align: center;
     padding: 10px;
     color: white;
@@ -255,86 +147,53 @@
   .responsive li {
     display: block;
   }
-/*   
-  * {
-    box-sizing: border-box;
-
+/*outside flex*/
+  .cards{
+      display:flex;
+      flex-direction: column;
+      justify-content:space-around;
+      flex-wrap:wrap;
+      max-width:80%;
+      margin:auto;
+      align-items:flex-end;
+  }
+  /*inside flex*/
+  .card{
+      display:block;
+      border: 1px black solid;
+        }
+.card {
+    border: 5px black solid;
 }
 
-body {
-    font-family: "Bree Serif", serif;
+/* .card:nth-last-child(3rd){
+    max-width: 250px; */
+}
+section h2, h3, p{
     text-align: center;
-    background-color: #f7f7f7;
+}
+section h2{
+    margin-bottom: 10px;
 }
 
-main {
-    margin: 5px;
-    border: 1px solid #173757;
-    padding: 7px;
-    box-shadow: 0 0 20px grey;
+section h3 {
+    margin-top: 1px;
 }
 
-section {
-    margin: 7px;
-    background-color: #2e4b68;
-    border: 1px solid #173757;
+section p {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
 }
 
-h1{
-    color: #173757;
-}
+  /* When it becomes smaller, .cards = flex-direction : column and card = flex-direction:row AND REMOVE 250PX */
 
-h2 {
-    padding: 5px;
-    color: #ffa500;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-img {
-    width: 50%;
-    box-shadow: 0 0 20px;
-}
-
-section {
-    margin: 3px;
-    padding-bottom: 15px;
-}
-
-p {
-    margin-top: -15px;
-    padding-bottom: 5px;
-    font-family: 'Lato', serif;
-    color: #f7f7f7;
-}
-
-footer {
-    background-color: #173757;
-    color: white;
-    margin: 5px;
-    padding: 10px;
-    font-size: 20px;
-    border: 5px;
-}
-
-/* Media Query for medium + screens */
-/*
-@media only screen and (min-width: 32.5em) {
-
-
-    .cards {
-        grid-template-columns: 50% 50%;
-    }
-
-}
-
-@media only screen and (min-width: 961px) {
-
-    .cards {
-        grid-template-columns: 25% 25% 25% 25%;
-    }
-
-} */
+    /* Medium or smaller */
+    /* .card:nth-child(odd){
+        flex-direction: row-reverse;
+    } */
+    /* .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    
+    } */

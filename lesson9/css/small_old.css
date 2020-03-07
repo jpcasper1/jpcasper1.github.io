@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box;
+  }
+    
+  body {
+    background-color: #f7f7f7;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bree Serif", serif;
+    background-color: #002447;
+    color: white;
+    padding-bottom: 5px;
+  }
+  
+  header div {
+    padding-right: 40px;
+  }
+  
+  .townintro {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+    padding: 0em;
+  }
+  
+  .wupdate {
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    background: radial-gradient(rgb(248, 235, 117), #ffa500);
+    border: 1px solid #000;
+    padding: 0.1rem;
+    box-shadow: 0 0 30px rgb(33, 33, 37);
+    opacity: 0.8;
+    font-size: 12pt;
+    line-height: 0.5;
+    color: black;
+  }
+  
+  .header_motto {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 30pt;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 960px;
+    display: block;
+    font-family: "Lato", sans-serif;
+    font-size: 14pt;
+    padding: 1em;
+    background-color: #f7f7f7;
+    width: 100%;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: 100%;
+}
+  .center {
+    text-align: center;
+  }
+  
+  h2,
+  h3 {
+    font-family: "Bree Serif", serif;
+    color: #002447;
+  }
+  /*start nav here*/
+  
+  nav {
+    background-color: #173757;
+  }
+  
+  .navigation {
+    background-color: #173757;
+    margin: 0 auto;
+    max-width: 960px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .navigation a {
+    display: block;
+    font-size: 16pt;
+    font-family: "Bree, Serif";
+    color: #ffa500;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+   }
+  
+  .navigation a:hover {
+    background-color: #53d3d1;
+    color: #19180a;
+  }
+  
+  nav ul li.active a {
+    background-color: #2e4b68;
+    color: #ffa500;
+  }
+  /*end nav here*/
+  
+  /* .townImage{
+    overflow: hidden;
+    width:100%;
+    height:300px;
+    object-fit: cover;
+  } */
+  .townImageParent{
+    margin: 0 2%;
+    overflow: hidden;
+  }
+  
+  .townImageImage{
+    width:96%;
+  }
+  
+  .contactTitle{
+    width:100%;
+    text-align:center;
+  }
+  
+  /*start flex css here*/
+  .flex-container {
+    margin: 0 auto;
+    max-width: 850px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .col {
+    flex: 1 1 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background-color: transparent;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .flex div img {
+    border-radius: 100px;
+    padding: 5px;
+  }
+  
+  .flex-container div:last-child {
+    border-right: 1px solid black;
+  }
+  
+  .dow {
+    display: block;
+    padding: 5px;
+    background-color: #173757;
+    color: #ffa500;
+  }
+  
+  .data {
+    border-top: 1px solid black;
+    display: block;
+    padding: 0 5px 5px;
+  }
+  
+  .art {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 15px;
+  }
+  
+  .smallDiss{
+    display:none;
+  }
+  
+  /*end css flex here*/
+  
+  .artimage {
+    display: block;
+    width: 90%;
+    margin: 15px;
+    border: 1px solid #000;
+    box-shadow: 0 0 20px rgb(33, 33, 37);
+    
+  }
+  
+  
+  /*start contact flex here*/
+  .flex-contact {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "Lato", sans-serif;
+  }
+  
+  
+  .column{
+    float: left;
+  }
+  .contact {
+    text-align: left;
+    padding-left: 7px;
+    padding-top: 0;
+  }
+  
+  .mapImage{
+    display: none;
+  }
+  
+  
+  /*end contact flex here*/
+  
+  footer {
+    background-color: #002447;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: auto;
+    font-size: 16pt;
+    width: 100%;
+  }
+  
+  .responsive li {
+    display: block;
+  }
+/*   
+  * {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Bree Serif", serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+main {
+    margin: 5px;
+    border: 1px solid #173757;
+    padding: 7px;
+    box-shadow: 0 0 20px grey;
+}
+
+section {
+    margin: 7px;
+    background-color: #2e4b68;
+    border: 1px solid #173757;
+}
+
+h1{
+    color: #173757;
+}
+
+h2 {
+    padding: 5px;
+    color: #ffa500;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+img {
+    width: 50%;
+    box-shadow: 0 0 20px;
+}
+
+section {
+    margin: 3px;
+    padding-bottom: 15px;
+}
+
+p {
+    margin-top: -15px;
+    padding-bottom: 5px;
+    font-family: 'Lato', serif;
+    color: #f7f7f7;
+}
+
+footer {
+    background-color: #173757;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: 5px;
+}
+
+/* Media Query for medium + screens */
+/*
+@media only screen and (min-width: 32.5em) {
+
+
+    .cards {
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+
+    .cards {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+} */

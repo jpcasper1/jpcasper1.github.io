@@ -35,18 +35,26 @@
 		float: right;
 		max-width: 300px;
 	} */
-
+/*container*/
 	.cards{
+		background-color: purple;
+		display: flex;
 		flex-direction: column;
+		max-width: 600px;
+		flex-wrap: nowrap;
+		justify-content: center;
 	}
+	
 	.card{
+		display: flex;
 		flex-direction: row;
-	}
-
-	/* .card:nth-child(odd){
-        flex-direction: row-reverse;
-	}
-	 */
+		background-color: orange;
+			}
+	.card:nth-child(odd){
+			flex-direction: row-reverse;
+		}
+	
+	
 	.mapImage{
 		overflow: hidden;
 		width:100%;
