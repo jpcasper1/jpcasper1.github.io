@@ -1,4 +1,4 @@
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 980px) {
 	.title {
 		font-size: 36pt;
 	}
@@ -28,9 +28,9 @@
 		flex-wrap:wrap;
 		max-width:80%;
 		margin:auto;
-		align-items:flex-end;
-		background-color: blue;
-		border: 2px solid red;
+		background-color: #002447;
+		border: 2px solid #f7f7f;
+		padding: 10px;
 	}
 	.card:nth-child(odd){
         flex-direction: column;
@@ -43,11 +43,15 @@
 		min-width: 250px;
 		flex-wrap: wrap;
 		text-align: center;
+		/* align-items: flex-end; */
 		}
 
 	.card p{
 		margin: 2px;
 		
+	}
+	.card imageDiv{
+		border: 5px solid white;
 	}
 	
 }

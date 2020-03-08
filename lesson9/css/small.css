@@ -133,6 +133,9 @@ nav ul li.active a {
   }
 /*end contact flex here*/
 
+.lower{
+    background-color: #f7f7f7;
+}
 footer {
     background-color: #002447;
     font-family: "Lato", sans-serif;
@@ -149,32 +152,35 @@ footer {
   }
 /*outside flex*/
   .cards{
-      display:flex;
+      /* display:flex; */
+
       flex-direction: column;
-      justify-content:space-around;
+      
       flex-wrap:wrap;
       max-width:80%;
       margin:auto;
-      align-items:flex-end;
+      /* align-items:flex-end; */
   }
   /*inside flex*/
   .card{
-      display:block;
-      border: 1px black solid;
-        }
-.card {
-    border: 5px black solid;
-}
+    display: flex;
+    flex-direction: column;
+    border: 5px #2e4b68 solid;
+    align-items: center;
+            }
 
 /* .card:nth-last-child(3rd){
-    max-width: 250px; */
-}
+    max-width: 250px; 
+}*/
+
 section h2, h3, p{
     text-align: center;
 }
+
 section h2{
+    margin-top: 5px;
     margin-bottom: 10px;
-}
+    }
 
 section h3 {
     margin-top: 1px;
@@ -183,7 +189,9 @@ section h3 {
 section p {
     font-family: "Lato", sans-serif;
     margin: 0px;
+ 
 }
+
 
   /* When it becomes smaller, .cards = flex-direction : column and card = flex-direction:row AND REMOVE 250PX */
 

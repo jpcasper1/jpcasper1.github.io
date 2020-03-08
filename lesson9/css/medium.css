@@ -1,5 +1,5 @@
 /* Media Query for medium + screens */
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 553px) {
 	header {
 		justify-content: center;
 	}
@@ -30,6 +30,9 @@
 		display: flex;
 	  }
 
+	  main{
+		background-color: #002447;
+	}
 	  	/* .artimage{
 		padding: .15px;
 		float: right;
@@ -43,17 +46,22 @@
 		max-width: 600px;
 		flex-wrap: nowrap;
 		justify-content: center;
+		align-items: stretch;
 	}
 	
 	.card{
 		display: flex;
 		flex-direction: row;
 		background-color: orange;
+		justify-content: space-between;
 			}
 	.card:nth-child(odd){
 			flex-direction: row-reverse;
 		}
 	
+		section h2{
+			margin-top: 0px;
+		}
 	
 	.mapImage{
 		overflow: hidden;
