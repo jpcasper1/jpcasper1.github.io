@@ -13,7 +13,7 @@ fetch(requestURL)
         let card = document.createElement('section');
         card.className = 'card';
         // columnClass = { flex : flex-column}
-        let imageDiv = document.createElement('div')
+        let imageDiv = document.createElement('div');
 
         let titleDiv = document.createElement("div");
 
@@ -28,7 +28,7 @@ fetch(requestURL)
         h3.textContent = towns[i].motto;
         yearFounded.textContent = "Year Founded " + towns[i].yearFounded;
         currentPopulation.textContent = "Population: " + towns[i].currentPopulation;
-        averageRainfall.textContent="Annual Rain Fall: " + towns[i].averageRainfall;
+        averageRainfall.textContent="Annual Rainfall: " + towns[i].averageRainfall;
 
 
         image.setAttribute('src', "images/" + towns[i].photo);
