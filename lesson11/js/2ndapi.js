@@ -1,10 +1,44 @@
-const WEATHER_CURRENT_API = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
-const WEATHER_FORECAST_API = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
+const WEATHER_CURRENT_API = "https://api.openweathermap.org/data/2.5/weather?appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
+const WEATHER_FORECAST_API = "https://api.openweathermap.org/data/2.5/forecast?appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
 const WEATHER_IMAGE_API = "https://openweathermap.org/img/w/";
+const CITY_INFO = {
+    "Soda Springs" : {
+        "id": 5607916,
+        "name": "Soda Springs",
+        "state": "ID",
+        "country": "US",
+        "coord": {
+          "lon": -111.604668,
+          "lat": 42.654369
+        }
+    },  
+    "Preston" :{
+        "id": 5604473,
+        "name": "Preston",
+        "state": "ID",
+        "country": "US",
+        "coord": {
+          "lon": -111.876617,
+          "lat": 42.09631
+        }
+      }
+      {
+        "id": 5601299,
+        "name": "Fish Haven",
+        "state": "ID",
+        "country": "US",
+        "coord": {
+          "lon": -111.297699,
+          "lat": 42.322151
+        }
+      },
+}
 
 const DAYS_OF_WEEK = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
-fetch(WEATHER_CURRENT_API)
+var townName = document.getElementById('townName').textContent
+
+fetch(WEATHER_CURRENT_API+'&id='+CITY_INFO[townName].id)
     .then(function (response)  {
         return response.json()
     })
@@ -30,7 +64,7 @@ fetch(WEATHER_CURRENT_API)
 });
 
 
-fetch(WEATHER_FORECAST_API)
+fetch(WEATHER_FORECAST_API+'&id='+CITY_INFO[townName].id)
     .then((response) => response.json())
      .then((jsObject) => {
        console.log(jsObject);
@@ -49,14 +83,13 @@ fetch(WEATHER_FORECAST_API)
             var ourDay = new Date(fivedayforecast[i].dt_txt)
             dayName.textContent = DAYS_OF_WEEK[ourDay.getDay()];
 
-            // ADD CSS TO STYLE IMAGE 75 x 75 , possibly change background color
             var img = document.createElement('img');
             img.setAttribute('src',WEATHER_IMAGE_API + fivedayforecast[i].weather[0].icon + '.png');
             img.setAttribute('alt',fivedayforecast[i].weather[0].description);
 
             var weatherData = document.createElement('span');
             weatherData.className = 'data';
-            weatherData.innerHTML = fivedayforecast[i].main.temp + '&#8457'
+            weatherData.innerHTML = fivedayforecast[i].main.temp + '&#8457';
 
             dayContainer.appendChild(dayName);
             dayContainer.appendChild(img);
