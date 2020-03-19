@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>The 208 Forecast</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="description" content="A weather website for Southern Idaho." />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="/lesson11/css/small.css" />
+  <link rel="stylesheet" href="/lesson11/css/medium.css" />
+  <link rel="stylesheet" href="/lesson11/css/large.css" />
+</head>
+
+<body>
+  <p id="announce">
+    Saturday=Preston Pancakes in the Park!<br />
+    9:00 a.m. Saturday at the city park pavilion.
+  </p>
+  <header>
+    <img src="images/idicon_png.png" class="logo" alt="Site logo" />
+    <div>
+      <h1 class="title">The 208 Forecast</h1>
+      <span class="header_motto">Idaho's Premiere Weather</span>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li class="hammenu"><a>&#9776; Menu</a></li>
+      <li><a href="/lesson11/index.html">Home</a></li>
+      <li><a href="/lesson11/preston-10.html">Preston</a></li>
+      <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+      <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>
+      <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+      <li class="active"><a href="/lesson11/gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class='clearfix'>
+      <!-- <section class="townintro"> -->
+      <h2 class="center">Weather Gallery</h2>
+      <div class="ggrid">
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/fog.jpg" alt="Fog over the valley">
+          <figcaption class="caption">Fog over the valley</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/bridge.jpg" alt="Bridge over the bay">
+          <figcaption class="caption">Bridge over the bay</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/snow.jpg" alt="Snow and sunshine">
+          <figcaption class="caption">Snow and sunshine</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/sunset.jpg" alt="Sunset">
+          <figcaption class="caption">Sunset</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/rock.jpg" alt="Sun on the rocks">
+          <figcaption class="caption">Sun on the rocks</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/mist.jpg" alt="Mist in the morning">
+          <figcaption class="caption">Mist in the morning</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/lightning.jpg" alt="Lightning storm">
+          <figcaption class="caption">Lightning storm</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/fall.jpg" alt="Fall on the lake">
+          <figcaption class="caption">Fall on the lake</figcaption>
+        </figure>
+        <figure class="gallery norm">
+          <img src="images/place2.jpg" data-src="images/branch.jpg" alt="Snow on the branch">
+          <figcaption class="caption">Snow on the branch</figcaption>
+        </figure>
+      </div>
+        <section>
+          <h3 class="contactTitle">Contact Information</h3>
+          <div class="flex-contact">
+            <div class="contact">
+              <img class="mapImage" src="images/prestonmap.jpg" alt="Preston overhead" />
+            </div>
+            <div class="contact">
+              <p>
+                <img src="/lesson7/images/loc_sm.png" alt="geolocation icon" /> The 208
+                Forecast<br />
+                1900 Weather Ave. #33<br />
+                Preston, ID 55442
+              </p>
+            </div>
+            <div class="contact">
+              <p>&#9742; 999-999-9999</p>
+              <p>&#9993; email@208Forecast.com</p>
+              <div class="column">
+                <img src="/lesson7/images/fb.png" alt="facebook icon" />
+              </div>
+              <div class="column">
+                <img src="/lesson7/images/tweet.png" alt="twitter icon" />
+              </div>
+              <div class="column">
+                <img src="/lesson7/images/pin.png" alt="pinterest icon" />
+              </div>
+              <div class="column">
+                <img src="/lesson7/images/yelp.png" alt="yelp icon" />
+              </div>
+              <!-- https://www.iconfinder.com/rasmusnielsendk  free icons if attributed -->
+            </div>
+          </div>
+        </section>
+      </div>
+  </main>
+  <footer>
+    <p>
+      &copy;<span id="year"></span> The 208 Forecast : Attributions : Joann
+      Casper <br> <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="/lesson7/js/webfontload.js"></script>
+  <script src="/lesson7/js/scripts.js"></script>
+  <script src="/lesson7/js/lazyload.js" defer></script>
+</body>
+</html>
