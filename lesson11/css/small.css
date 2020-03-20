@@ -76,6 +76,7 @@ header div {
   font-size: 12pt;
   line-height: 0.5;
   color: black;
+  margin: 1px;
 }
 
 .header_motto {
@@ -99,11 +100,11 @@ h1 {
 
 main {
   margin: 0 auto;
-  max-width: 960px;
+  /*max-width: 960px;*/
   display: block;
   font-family: "Lato", sans-serif;
   font-size: 14pt;
-  padding: 1em;
+  padding: 2em;
   background-color: #f7f7f7;
   width: 100%;
 }
@@ -185,6 +186,7 @@ nav ul li.active a {
 .contactTitle {
   width: 100%;
   text-align: center;
+  padding-top: 10px;
 }
 
 /*start flex css here*/
@@ -231,7 +233,7 @@ nav ul li.active a {
 
 .art {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 860px;
   padding-right: 10px;
   padding-left: 15px;
 }
@@ -339,24 +341,27 @@ nav ul li.active a {
     align-items: center;
   }
 
-  section h2,
+  /* section h2,
   h3,
   p {
     text-align: center;
-  }
+  } */
 
-  section h2 {
+  section.card h2 {
     margin-top: 5px;
     margin-bottom: 10px;
+    text-align: center;
   }
 
-  section h3 {
+  section.card h3 {
     margin-top: 1px;
+    text-align: center;
   }
 
-  section p {
+  section.card p {
     font-family: "Lato", sans-serif;
-    margin: 0px;
+     margin: 0px; 
+     text-align: center;
 
   }
 
@@ -398,11 +403,6 @@ picture img{
     filter: blur(0em);
     transition: filter 0.5s;
     margin: 5px;
-}
-
-.contactTitle{
-  width:100%;
-  text-align:center;
 }
 
 /*start storm form here*/

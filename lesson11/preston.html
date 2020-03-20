@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>The 208 Forecast</title>
+  <title>Preston Idaho : The 208 Forecast</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <meta name="description" content="A weather website for Southern Idaho." />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -20,7 +20,8 @@
     9:00 a.m. Saturday at the city park pavilion.
   </p>
   <header>
-    <img src="images/idicon_png.png" class="logo" alt="Site logo" />
+    <a href="index.html">
+    <img src="images/idicon_png.png" class="logo" alt="Site logo"></a>
     <div>
       <h1 class="title">The 208 Forecast</h1>
       <span class="header_motto">Idaho's Premiere Weather</span>
@@ -60,41 +61,15 @@
     <section class="smallDiss">
       <h2 class="center">5 Day Forecast</h2>
       <div id="fiveForecastContainer" class="flex-container">
-
-        <!-- <div class="col">
-          <span class="dow">Friday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-
-        <div class="col">
-          <span class="dow">Saturday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-
-        <div class="col">
-          <span class="dow">Sunday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Monday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span>
-        </div>
-        <div class="col">
-          <span class="dow">Tuesday</span>
-          <img src="images/snow2.png" alt="snow" />
-          <span class="data">Temp</span> -
-        </div>-->
       </div>
     </section>
 
     <h2 class="center">The Frost Festival</h2>
-    <p>By the Snowman</p>
+    
     <section class="art">
       <img class="artimage" alt="Kids in snow" src="images/frostfest.jpg" />
+      <p>By the Snowman</p>
+      <br>
       <p>
         The 2020 Frost Festival is set with activities for all ages of
         Prestonites this weekend. The annual winter event has been held for
@@ -105,10 +80,12 @@
         opportunities for seasonal fun, including a popular sledding hill and
         lodge.
       </p>
+      <br>
       <p>
         This year's Frost Festival includes, if ample snow, sledding, fat
         bikes, and snowshoeing on the parks hills and fields.
       </p>
+      <br>
       <p>
         If snow is a bit scarce, there will still be a long list of fun
         activities for families to enjoy including ice sculptures, food
@@ -116,6 +93,7 @@
         puppet show provided by Preston Public Library, visits with princesses
         from the Disney movie "Frozen," and visits with Frosty the snowman.
       </p>
+      <br>
       <p>
         There will also be fun Harry Potter-themed activities available, and a
         Frost Festival King and Queen will be crowned. Clowns will be on hand
@@ -124,20 +102,17 @@
       </p>
     </section>
     <section>
-      <h3 class="contactTitle">Contact Information</h3>
+      <h2 class="contactTitle">Contact Information</h2>
       <div class="flex-contact">
         <div class="contact">
-          <img class="smallDiss" src="images/prestonmap.jpg" alt="Preston overhead" />
-        </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628277333!2d-111.91534437001668!3d42.09980531171999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1584745345915!5m2!1sen!2sus" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         <div class="contact">
           <p>
             <img src="images/loc_sm.png" alt="geolocation icon" /> The 208
             Forecast<br />
             1900 Weather Ave. #33<br />
             Preston, ID 55442
-          </p>
-        </div>
-        <div class="contact">
           <p>&#9742; 999-999-9999</p>
           <p>&#9993; email@208Forecast.com</p>
           <div class="column">
@@ -160,7 +135,7 @@
   <footer>
     <p>
       &copy;<span id="year"></span> The 208 Forecast : Weather information from OpenWeatherMap.org : Joann
-      Casper : <span id="currentdate"></span>
+      Casper <br><span id="currentdate"></span>
     </p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>

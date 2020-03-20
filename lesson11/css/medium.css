@@ -121,7 +121,7 @@
 		background-color: #f7f7f7;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows; auto;
+		grid-template-rows: auto;
 		
 	}
 	.cards{
@@ -134,12 +134,14 @@
 		padding: 10px;
 	}
 	
-	.card{
+	section.card{
 		display: flex;
 		flex-direction: row;
 		background-color: orange;
 		justify-content: space-between;
+
 			}
+	
 	.card:nth-child(odd){
 			flex-direction: row-reverse;
 		}
@@ -147,5 +149,6 @@
 		section h2{
 			margin-top: 0px;
 		}
+		
 
 }

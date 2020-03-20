@@ -22,16 +22,16 @@ const CITY_INFO = {
           "lat": 42.09631
         }
       }
-      {
-        "id": 5601299,
-        "name": "Fish Haven",
-        "state": "ID",
-        "country": "US",
-        "coord": {
-          "lon": -111.297699,
-          "lat": 42.322151
-        }
-      },
+      // {
+      //   "id": 5601299,
+      //   "name": "Fish Haven",
+      //   "state": "ID",
+      //   "country": "US",
+      //   "coord": {
+      //     "lon": -111.297699,
+      //     "lat": 42.322151
+      //   }
+      // },
 }
 
 const DAYS_OF_WEEK = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]

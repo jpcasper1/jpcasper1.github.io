@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>The 208 Forecast</title>
+  <title>Soda Springs: Idaho Town: The 208 Forecast</title>
   <link rel="shortcut icon" href="favicon.ico" />
   <meta name="description" content="A weather website for Southern Idaho." />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -20,7 +20,8 @@
     9:00 a.m. Saturday at the city park pavilion.
   </p>
   <header>
-    <img src="images/idicon_png.png" class="logo" alt="Site logo" />
+    <a href="index.html">
+    <img src="images/idicon_png.png" class="logo" alt="Site logo"></a>
     <div>
       <h1 class="title">The 208 Forecast</h1>
       <span class="header_motto">Idaho's Premiere Weather</span>
@@ -39,13 +40,13 @@
   </nav>
   
   <main>
-    <h2 class="center"><span id='townName'>Soda Springs</span> Idaho</h2>
+    <h2 class="center"><span id='townName'>Soda Springs</span>, Idaho</h2>
     <section class="townintro">
             <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
       <picture class="townImageParent">
-        <source media="(max-width: 500px)" srcset="images/prestonimg500.jpg">
-        <source media="(max-width: 700px)" srcset="images/prestonimg700.jpg">
-          <img class='townImageImage' src="images/prestonimg.jpg" alt="PrestonTowns">
+        <source media="(max-width: 500px)" srcset="images/sodasprings500.jpg">
+        <source media="(max-width: 700px)" srcset="images/sodasprings700.jpg">
+          <img class='townImageImage' src="images/sodasprings960.jpg" alt="PrestonTowns">
       </picture>
       <div class="wupdate">
         <h2>Current Weather</h2>
@@ -124,10 +125,10 @@
       </p>
     </section>
     <section>
-      <h3 class="contactTitle">Contact Information</h3>
+      <h2 class="contactTitle">Contact Information</h2>
       <div class="flex-contact">
         <div class="contact">
-          <img class="smallDiss" src="images/prestonmap.jpg" alt="Preston overhead" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.966899149178!2d-111.6062816219861!3d42.66144307561673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1584745217619!5m2!1sen!2sus" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
         <div class="contact">
           <p>
@@ -136,8 +137,6 @@
             1900 Weather Ave. #33<br />
             Preston, ID 55442
           </p>
-        </div>
-        <div class="contact">
           <p>&#9742; 999-999-9999</p>
           <p>&#9993; email@208Forecast.com</p>
           <div class="column">
@@ -160,7 +159,7 @@
   <footer>
     <p>
       &copy;<span id="year"></span> The 208 Forecast : Weather information from OpenWeatherMap.org : Joann
-      Casper : <span id="currentdate"></span>
+      Casper <br> <span id="currentdate"></span>
     </p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
