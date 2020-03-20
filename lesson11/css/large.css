@@ -38,4 +38,38 @@
 	.mapImage{
 		display: flex;
 	}
+
+	/*outside flex*/
+	.cards{
+		display: flex;
+		flex-direction: row;
+		justify-content:space-around;
+		/* flex-wrap:wrap; */
+		max-width:80%;
+		margin:auto;
+		background-color: #002447;
+		border: 2px solid #f7f7f;
+		padding: 10px;
+	}
+	.card:nth-child(odd){
+        flex-direction: column;
+	}
+  /*inside flex*/
+  	.card{
+		display:flex;
+		flex-direction: column;
+		flex-basis: 250px;
+		min-width: 250px;
+		flex-wrap: wrap;
+		text-align: center;
+		/* align-items: flex-end; */
+		}
+
+	.card p{
+		margin: 2px;
+		
+	}
+	.card imageDiv{
+		border: 5px solid white;
+	}
 }
