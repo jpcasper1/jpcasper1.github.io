@@ -46,7 +46,7 @@
 		justify-content:space-around;
 		max-width:80%;
 		margin:auto;
-		background-color: #002447;
+		background-color: #white;
 		border: 2px solid #f7f7f7;
 	}
 	.card:nth-child(odd){
@@ -72,5 +72,12 @@
 	}
 	.card imageDiv{
 		border: 5px solid white;
+	}
+	.card div{
+		width: 100%;
+	}
+
+	.card img{
+		padding-top: 15px;
 	}
 }

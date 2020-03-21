@@ -47,6 +47,7 @@
 	}
 
 	.mapImage{
+		display: flex;
 		overflow: hidden;
 		width:100%;
 		object-fit: cover;
@@ -118,6 +119,8 @@
 	}
 
 	.links{
+		max-width: 600px;
+		margin: auto;
 		background-color: #f7f7f7;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -150,5 +153,11 @@
 			margin-top: 0px;
 		}
 		
+		.card div{
+			width: 50%;
+		}
+	.card img{
+		padding: 0px;
+	}
 
 }
