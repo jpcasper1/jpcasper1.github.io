@@ -12,7 +12,7 @@ fetch(requestURL)
       if (["Fish Haven", "Preston", "Soda Springs"].indexOf(towns[i].name) > -1) {
         let card = document.createElement('section');
         card.className = 'card';
-        // columnClass = { flex : flex-column}
+       
         let imageDiv = document.createElement('div');
 
         let titleDiv = document.createElement("div");

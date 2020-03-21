@@ -24,16 +24,14 @@ fetch(WEATHER_CURRENT_API+'&zip='+CITY_INFO[townName].zip)
         return response.json()
     })
     .then(function (jsObject) {
-        console.log(jsObject);
+        
         document.getElementById("currently").textContent = jsObject.weather[0].main;
         document.getElementById("current-temp").textContent = jsObject.main.temp;
         document.getElementById("humidity").textContent = jsObject.main.humidity;
         document.getElementById("windspeed").textContent = jsObject.wind.speed;
-        console.log(jsObject);
-        console.log(humidity)
-
+        
         temp = document.getElementById('current-temp').textContent;
-        console.log(temp,'TEMPERATURE')
+      
         windspeed = document.getElementById('windspeed').textContent;
         if (windspeed<3 || temp > 50){
             document.getElementById('windChill').textContent = 'N/A';
@@ -88,12 +86,11 @@ fetch(TOWN_DATA_API)
 })
 .then(function (jsonObject) {
 
-    // temporary checking for valid response and data parsing
-    
+   
     const towns=jsonObject['towns'];
     for (let i = 0; i < towns.length; i++) {
         if (towns[i].name == townName) {
-            // make our events section
+            
             for(let j = 0; j < towns[i].events.length; j++){
                 s = document.createElement('div')
                 s.textContent = towns[i].events[j]

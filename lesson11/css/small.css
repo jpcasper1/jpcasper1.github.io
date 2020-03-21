@@ -70,13 +70,18 @@ header div {
   left: 30px;
   background: radial-gradient(rgb(248, 235, 117), #ffa500);
   border: 1px solid #000;
-  padding: 0.1rem;
+  padding: 0.3rem;
   box-shadow: 0 0 30px rgb(33, 33, 37);
   opacity: 0.8;
   font-size: 12pt;
   line-height: 0.5;
   color: black;
-  margin: 1px;
+  }
+
+.wupdate h2{
+  padding-top: 0px;
+  padding-bottom: 2px;
+  margin: 2px;
 }
 
 .header_motto {
@@ -181,7 +186,6 @@ nav ul li.active a {
 
 .townImageImage {
   width: 96%;
-  min-height: 210px;
   border-radius: 10px;
 }
 
@@ -465,6 +469,7 @@ form label.inputTitle input:not([type='range']):invalid{
     color: white; 
     border-radius: 10px;
     line-height: 2px;
+    padding-bottom: 3px;
   }
 
 .upcomingEventsSection{
