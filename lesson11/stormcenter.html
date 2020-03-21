@@ -42,8 +42,8 @@
         </legend>
         <label class="inputTitle">Full Name*<input type="text" name="fname" id="fullName" pattern="[\sA-Za-z]{5,}" required></label>
         <label class="inputTitle">Phone*<input type="tel" name="phone" placeholder="###-###-####" required></label>
-        <label class="inputTitle">Zip code*<input type="number" name="zipcode" min="100000" max="99999"
-            onkeyup="if(this.value.length>1){this.value=Math.abs(this.value)}" required></label>
+        <label class="inputTitle">Zip code*<input type="text" name="zipcode" pattern="[0-9]{5}"
+            onkeyup="if(this.value.length>1 && this.value[0]!=0){this.value=Math.abs(this.value)}" required></label>
         <label class="inputTitle">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
 
       </fieldset>
@@ -144,13 +144,14 @@
   </main>
   <footer>
     <p>
-      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Map from Google Maps : National Weather Service : Joann
+      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Google Maps : National Weather Service : Joann
       Casper <br /> <span id="currentdate"></span>
     </p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfontload.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/storm.js"></script>
 </body>
 
 </html>

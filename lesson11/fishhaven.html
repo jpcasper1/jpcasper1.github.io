@@ -15,11 +15,7 @@
 </head>
 
 <body>
-  <p id="announce">
-    Saturday=Preston Pancakes in the Park!<br />
-    9:00 a.m. Saturday at the city park pavilion.
-  </p>
-  <header>
+   <header>
     <a href="index.html">
       <img src="images/idicon_png.png" class="logo" alt="Site logo" /></a>
     <div>
@@ -40,7 +36,7 @@
   </nav>
 
   <main>
-    <h2 class="center">Fish Haven, Idaho</h2>
+    <h2 class="center"><span id='townName'>Fish Haven</span>, Idaho</h2>
     <section class="townintro">
       <!-- <img class="townImage" src="images/preston1.jpg" alt="Preston Town" /> -->
       <picture class="townImageParent">
@@ -51,18 +47,21 @@
       <div class="wupdate">
         <h2>Current Weather</h2>
         <p>Currently: <span id="currently"></span></p>
-        <p>Temperature: <span id='current-temp'></span>&#8457</p>
-        <p>Windchill: <span id='windChill'></span>&#8457</p>
+        <p>Temperature: <span id='current-temp'></span>&#8457;</p>
+        <p>Windchill: <span id='windChill'></span>&#8457;</p>
         <p>Humidity: <span id='humidity'></span>%</p>
         <p>Wind Speed: <span id='windspeed'></span>mph</p>
         <p></p>
       </div>
     </section>
+    <section class="upcomingEventsSection">
+      <h2>Upcoming Events</h2>
+      <div id="upcomingEvents" class="upcomingEvents">
+      </div>
+    </section>
     <section class="smallDiss">
       <h2 class="center">5 Day Forecast</h2>
       <div id="fiveForecastContainer" class="flex-container">
-
-
       </div>
     </section>
 
@@ -71,27 +70,25 @@
     <section class="art">
       <img class="artimage" alt="Kids in snow" src="images/fishhaven.jpg">
       <p>By Joann Casper</p>
-      <br>
+      
       <p>
         If you've ever been to Redfish Lake, chances are you've seen the Grand Mogul since it is the most prominent peak
         visible over the lake. It is located in the Sawtooth Mountains and has a summit of 9,733 feet.
       </p>
-      <br>
       <p>
         On my way to this range’s highest point I once hiked up the Soldier Creek drainage and spent the night on the
         saddle between the second and third Soldier (named from east to west by the locals). As darkness approached and
         a lone bull elk below me quit bugling, clusters of lights to the south began revealing the locations of a
         half-dozen Magic Valley towns.
       </p>
-      <br>
-      <p>
+            <p>
         If snow is a bit scarce, there will still be a long list of fun
         activities for families to enjoy including ice sculptures, food
         trucks, a bonfire hosted by members of the Fish Haven Fire Department, a
         puppet show provided by Fish Haven Public Library, visits with princesses
         from the Disney movie "Frozen," and visits with Frosty the snowman.
       </p>
-      <br>
+     
       <p>
         There will also be fun Harry Potter-themed activities available, and a
         Fish Haven King and Queen will be crowned. Clowns will be on hand
@@ -133,7 +130,7 @@
   </main>
   <footer>
     <p>
-      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Map from Google Maps : National Weather Service : Joann
+      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Google Maps : National Weather Service : Joann
       Casper <br> <span id="currentdate"></span>
     </p>
   </footer>

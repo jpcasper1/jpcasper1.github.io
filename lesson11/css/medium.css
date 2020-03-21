@@ -54,6 +54,7 @@
 	  }
 	.smallDiss{
 		display:initial;
+
 	  }
 
 	  div.ggrid {
@@ -159,5 +160,9 @@
 	.card img{
 		padding: 0px;
 	}
+
+	.upcomingEventsSection h2{
+		line-height: 25px;
+	  }
 
 }

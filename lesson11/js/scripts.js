@@ -13,5 +13,5 @@ const options = {weekday:"long", day:"numeric", month:"long", year:"numeric"};
 document.getElementById("currentdate").textContent = d.toLocaleString("en-DE",options);
 
     
-	if(d.getDay() == 5) {document.getElementById("announce").style.display="block";}
-	else{document.getElementById("announce").style.display="none";}
+	// if(d.getDay() == 5) {document.getElementById("announce").style.display="block";}
+	// else{document.getElementById("announce").style.display="none";}

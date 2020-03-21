@@ -15,11 +15,7 @@
 </head>
 
 <body>
-  <p id="announce">
-    Saturday=Preston Pancakes in the Park!<br />
-    9:00 a.m. Saturday at the city park pavilion.
-  </p>
-  <header>
+   <header>
     <a href="index.html">
     <img src="images/idicon_png.png" class="logo" alt="Site logo"></a>
     <div>
@@ -48,14 +44,19 @@
         <source media="(max-width: 700px)" srcset="images/sodasprings700.jpg">
           <img class='townImageImage' src="images/sodasprings960.jpg" alt="PrestonTowns">
       </picture>
-      <div class="wupdate">
+      <div id="wupdate" class="wupdate">
         <h2>Current Weather</h2>
         <p>Currently: <span id="currently"></span></p>
-        <p>Temperature: <span id='current-temp'></span>&#8457</p>
-        <p>Windchill: <span id='windChill'></span>&#8457</p>
+        <p>Temperature: <span id='current-temp'></span>&#8457;</p>
+        <p>Windchill: <span id='windChill'></span>&#8457;</p>
         <p>Humidity: <span id='humidity'></span>%</p>
         <p>Wind Speed: <span id='windspeed'></span>mph</p>
         <p></p>
+      </div>
+    </section>
+    <section class="upcomingEventsSection">
+      <h2 class="center">Upcoming Events</h2>
+      <div id="upcomingEvents" class="upcomingEvents">
       </div>
     </section>
     <section class="smallDiss">
@@ -131,7 +132,7 @@
   </main>
   <footer>
     <p>
-      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Map from Google Maps : National Weather Service : Joann
+      &copy;<span id="year"></span> The 208 Forecast : Weather Information from OpenWeatherMap.org : Google Maps : National Weather Service : Joann
       Casper  <br> <span id="currentdate"></span>
     </p>
   </footer>

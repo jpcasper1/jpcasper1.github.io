@@ -1,44 +1,25 @@
 const WEATHER_CURRENT_API = "https://api.openweathermap.org/data/2.5/weather?appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
 const WEATHER_FORECAST_API = "https://api.openweathermap.org/data/2.5/forecast?appid=c833d7604b7d2b470b27b47d3ae39add&units=imperial";
 const WEATHER_IMAGE_API = "https://openweathermap.org/img/w/";
+const TOWN_DATA_API = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
 const CITY_INFO = {
     "Soda Springs" : {
-        "id": 5607916,
-        "name": "Soda Springs",
-        "state": "ID",
-        "country": "US",
-        "coord": {
-          "lon": -111.604668,
-          "lat": 42.654369
-        }
+        "zip": "83276"
     },  
     "Preston" :{
-        "id": 5604473,
-        "name": "Preston",
-        "state": "ID",
-        "country": "US",
-        "coord": {
-          "lon": -111.876617,
-          "lat": 42.09631
-        }
-      }
-      // {
-      //   "id": 5601299,
-      //   "name": "Fish Haven",
-      //   "state": "ID",
-      //   "country": "US",
-      //   "coord": {
-      //     "lon": -111.297699,
-      //     "lat": 42.322151
-      //   }
-      // },
+        "zip" : "83263"
+      },
+      "Fish Haven": {
+        "zip" : "83287"
+      },
 }
 
 const DAYS_OF_WEEK = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
 var townName = document.getElementById('townName').textContent
 
-fetch(WEATHER_CURRENT_API+'&id='+CITY_INFO[townName].id)
+fetch(WEATHER_CURRENT_API+'&zip='+CITY_INFO[townName].zip)
     .then(function (response)  {
         return response.json()
     })
@@ -55,7 +36,7 @@ fetch(WEATHER_CURRENT_API+'&id='+CITY_INFO[townName].id)
         console.log(temp,'TEMPERATURE')
         windspeed = document.getElementById('windspeed').textContent;
         if (windspeed<3 || temp > 50){
-            document.getElementById('windChill').textContent = 'N/A'
+            document.getElementById('windChill').textContent = 'N/A';
         } else {
             windChill = Math.round((35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed,0.16)) + (0.4275 *  temp * Math.pow(windspeed,0.16)))*100 )/100;
             console.log(windChill,'WINDCHILL')
@@ -64,7 +45,8 @@ fetch(WEATHER_CURRENT_API+'&id='+CITY_INFO[townName].id)
 });
 
 
-fetch(WEATHER_FORECAST_API+'&id='+CITY_INFO[townName].id)
+
+fetch(WEATHER_FORECAST_API+'&zip='+CITY_INFO[townName].zip)
     .then((response) => response.json())
      .then((jsObject) => {
        console.log(jsObject);
@@ -99,3 +81,26 @@ fetch(WEATHER_FORECAST_API+'&id='+CITY_INFO[townName].id)
 
        }
    });
+
+fetch(TOWN_DATA_API)
+.then(function (response) {
+    return response.json()
+})
+.then(function (jsonObject) {
+
+    // temporary checking for valid response and data parsing
+    
+    const towns=jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == townName) {
+            // make our events section
+            for(let j = 0; j < towns[i].events.length; j++){
+                s = document.createElement('div')
+                s.textContent = towns[i].events[j]
+                document.getElementById('upcomingEvents').appendChild(s)
+            }
+        }
+
+    }
+
+})
