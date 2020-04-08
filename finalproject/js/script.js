@@ -8,7 +8,7 @@ function toggleMenu() {
 
 
 function getQuote(element){
-	fetch("/data/quotes.json").then(function(response){
+	fetch("/finalproject/data/quotes.json").then(function(response){
 	  return response.json()
 	}).then(function (jsonObject){
 	  let e = document.getElementById(element);
