@@ -1,0 +1,32 @@
+{
+  "guides": [
+    {
+      "name": "Sven",
+      "photo": "sven.jpg",
+      "motto": "Paddle Faster!",
+	"yearsExperience": 4,
+      "certification": "Class I-IV",
+      "email": "swissguy@sradventures.com",
+      "biography": 
+        "Professional outdoorsman, loves adventure, river rafting and camping."
+      },
+    {
+      "name": "Gretchen",
+      "photo": "gretchen.jpg",
+      "motto": "Wanna go rafting?",
+      "yearsExperience": 5,
+	"certification": "Class I-IV",
+      "email": "gretchen@sradventures.com",
+      "biography": 
+        "Experienced chef, starry nights, ocean kayaking, running water"
+    },
+    {
+      "name": "George",
+      "photo": "george.jpg",
+      "motto": "Let me entertain you.",
+      "yearsExperience": 3,
+	"certification": "Class I-III",
+      "email": "guygeorge@sradventures.com",
+      "biography": 
+        "A hunter, gatherer, protector of wildlife."
+    }]}
