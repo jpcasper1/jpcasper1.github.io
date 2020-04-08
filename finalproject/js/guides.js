@@ -1,4 +1,4 @@
-const requestfile = "/data/guides.json";
+const requestfile = "/finalproject/data/guides.json";
 fetch(requestfile)
   .then(function (response) {
     return response.json()
