@@ -138,17 +138,16 @@ header img {
   text-align: center;
   float: none;
   font-family: "Montserrat", sans-serif;
-  color: #c7c4c4;
+  color: #f8f7f7;
 }
 
 .sidebar li.active {
   background-color: #325876;
-  color: #FFFFFF;
-}
+  }
 
 .sidebar a:hover:not(.active) {
   background-color: #5c5757;
-  color: #FFFFFF;
+  color: rgb(255,255,255);
 }
 
 ul {
