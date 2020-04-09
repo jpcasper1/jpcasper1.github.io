@@ -143,12 +143,12 @@ header img {
 
 .sidebar li.active {
   background-color: #325876;
-  color: white;
+  color: #FFFFFF;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #325876;
-  color: #fbb0a9;
+  background-color: #5c5757;
+  color: #FFFFFF;
 }
 
 ul {
