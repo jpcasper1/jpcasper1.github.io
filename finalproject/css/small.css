@@ -266,7 +266,8 @@ h3 {
 }
 
 section.card h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rokkitt", serif;
+  font-size: 30px;
   margin-top: 5px;
   margin-bottom: 10px;
   text-align: center;
@@ -274,7 +275,7 @@ section.card h2 {
 }
 
 section.card h3 {
-  font-family: "Muli", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 10px;
   text-align: center;
   color: #e8e8e8;
