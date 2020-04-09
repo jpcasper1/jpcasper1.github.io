@@ -37,13 +37,15 @@ h1.motto.center {
 h2.content.center {
   font-size: 45px;
   color: #434040;
-  font-family: "Big Shoulders Display black", cursive;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
 }
 
 h3.content {
   font-size: 30px;
   color: #434040;
-  font-family: "Big Shoulders Display black", cursive;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
 }
 
 /*weather update css here*/
