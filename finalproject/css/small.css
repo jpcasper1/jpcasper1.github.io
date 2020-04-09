@@ -108,9 +108,7 @@ h3.content {
 }
 
 .h1 vis_small text_title {
-  display: center;
   font-family: "Luckiest Guy", cursive;
-  /* color: #2626c1; */
 }
 div.content {
   padding: 1px 16px;
@@ -559,6 +557,13 @@ textarea {
   padding-left: 15px;
 }
 
+/*attributions page formatting*/
+
+section{
+  font-family: 'Rokkitt', serif;
+  font-size: 20px;
+  margin: 20px;
+}
 /*footer formatting*/
 
 footer {
