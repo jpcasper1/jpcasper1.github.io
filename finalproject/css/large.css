@@ -7,7 +7,6 @@
   .trip {
     display: flex;
     flex-direction: row;
-    border: 2px solid #434040;
     max-width: 100%;
   }
 

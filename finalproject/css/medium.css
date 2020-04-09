@@ -81,8 +81,7 @@
   }
 
   .trip {
-    /* flex-direction: row; */
-    border: 2px solid #434040;
+    border: 3px solid #434040;
     max-width: 325px;
   }
 
