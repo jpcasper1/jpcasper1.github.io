@@ -110,7 +110,7 @@ h3.content {
 .h1 vis_small text_title {
   display: center;
   font-family: "Luckiest Guy", cursive;
-  color: #2626c1;
+  /* color: #2626c1; */
 }
 div.content {
   padding: 1px 16px;
@@ -314,11 +314,11 @@ section.card p {
 
 #refreshingquotebar {
   background-color: #e8e8e8;
-  border: 3px solid #808080;
+  border: 2px solid #808080;
   color: #1b264f;
   max-width: 700px;
   padding: 0 10px;
-  border-radius: 20px;
+  border-radius: 12px;
   font-family: "Rokkitt", serif;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -450,7 +450,7 @@ input.buttons {
   padding: 0.75rem;
   color: #e8e8e8;
   border-color: #002447;
-  background-color: #2e4b68;
+  background-color: #325876;
   border-radius: 10px;
 }
 
@@ -482,7 +482,7 @@ textarea {
 
 input#input-submit {
   color: white;
-  background: #2e4b68;
+  background: #325876;
   cursor: pointer;
   font-size: 20px;
 }
@@ -564,8 +564,9 @@ footer {
   margin-top:10px;  
   font-family: "Montserrat", sans-serif;
   background-color: #373636;
-  padding-right: 18px;
   display: flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
 }
 
 .footertitle{
@@ -576,12 +577,11 @@ footer {
 }
 .subfooter{
   padding:5px;
-  width:100%;
   text-align:center;
-  position:absolute;
-  bottom:-30px;
+  width:100%;
   background-color: #373636;
   color: #c7c4c4;
+  font-size: 20px;
 } 
 
 .subfooter a{
@@ -593,7 +593,7 @@ footer {
   display:block;
   color: #e8e8e8;
   padding: 20px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   }
 
 .footlinks{
@@ -602,11 +602,17 @@ footer {
   display:block;
   color: #ffc914;
   text-decoration: none;
+  padding-top: 10px;
 
 }
 
-td img{
-  border-radius: 90px;
+.socialimage{
+width: 30px;height:30px;
+
+}
+
+.socialdiv{
+  padding-top: 20px;
 }
 .breakerbar{
   background-color: #ffc914;
@@ -615,6 +621,7 @@ td img{
   border-bottom:1px solid #ffc914;
   padding:0;
   margin:0;
+  width:100%;
 }
 
 .footer2 p {
