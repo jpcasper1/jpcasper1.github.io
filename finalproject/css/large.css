@@ -1,26 +1,23 @@
 @media only screen and (min-width: 961px) {
-  
-  h3{
-       text-align: center;
-      }
 
-      .trip{
-        display: flex;
-        flex-direction: row;
-        border: 2px solid #434040;
-        max-width: 100%;
-      }
-
-
-      .part1{
-        width: 50%
-      }
-      .part2{
-        width: 48%;
-        padding-left: 15px;
-      }
-
-          
-
-
+  h3 {
+    text-align: center;
   }
+
+  .trip {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #434040;
+    max-width: 100%;
+  }
+
+  .part1 {
+    width: 50%
+  }
+
+  .part2 {
+    width: 48%;
+    padding-left: 15px;
+  }
+
+}
